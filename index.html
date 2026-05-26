@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#bef264">
+  <meta name="color-scheme" content="light">
+
+  <title>Printvine — Print-Ready Artwork for Local UK Businesses</title>
+  <meta name="description" content="Printvine designs print-ready artwork for local UK businesses — menus, flyers, posters, business cards and more. Our new site is launching soon.">
+  <meta name="author" content="Printvine">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://printvine.co.uk/">
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Printvine">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:url" content="https://printvine.co.uk/">
+  <meta property="og:title" content="Printvine — Print-Ready Artwork for Local UK Businesses">
+  <meta property="og:description" content="Print-ready artwork for local UK businesses — menus, flyers, posters, business cards and more. Launching soon.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Printvine — Print-Ready Artwork for Local UK Businesses">
+  <meta name="twitter:description" content="Print-ready artwork for local UK businesses. Launching soon.">
+
+  <!-- Structured data: Organisation -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Printvine",
+    "url": "https://printvine.co.uk/",
+    "description": "Print-ready artwork for local UK businesses — menus, flyers, posters, business cards and more.",
+    "areaServed": { "@type": "Country", "name": "United Kingdom" }
+  }
+  </script>
+
+  <style>
+    /* ---- Printvine holding page — self-contained, no external assets ---- */
+    :root {
+      --bg: #f3f3f1;
+      --hero: #bef264;
+      --heading: #171717;
+      --text: #2f3334;
+      --muted: #687174;
+      --accent: #ec4899;
+      --primary: #31c47a;
+      --border: #d9d9d4;
+    }
+    * , *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ---- Logo (inline SVG) ---- */
+    .logo {
+      display: block;
+      height: 34px;
+      width: auto;
+      fill: #171717;
+    }
+
+    /* ---- Layout ---- */
+    .bar {
+      background: #2f302d;
+      color: rgba(255,255,255,0.92);
+      text-align: center;
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 0.6rem 1rem;
+    }
+    .bar .sep { color: var(--primary); margin: 0 0.45rem; }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      padding: 1.1rem 1.5rem;
+    }
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    main {
+      flex: 1;
+      background: var(--hero);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(3rem, 8vw, 6rem) 1.5rem;
+    }
+    .panel {
+      max-width: 640px;
+      text-align: center;
+    }
+    .eyebrow {
+      display: inline-block;
+      background: rgba(255,255,255,0.6);
+      color: var(--heading);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      margin-bottom: 1.5rem;
+    }
+    h1 {
+      margin: 0 0 1rem;
+      font-size: clamp(2.2rem, 6vw, 3.4rem);
+      line-height: 1.1;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--heading);
+    }
+    h1 .accent { color: var(--accent); }
+    .lead {
+      margin: 0 auto 2rem;
+      max-width: 480px;
+      font-size: 1.1rem;
+      color: var(--heading);
+    }
+
+    /* ---- Benefit points ---- */
+    .benefits {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      justify-content: center;
+      margin-bottom: 2.25rem;
+    }
+    .benefits span {
+      background: rgba(255,255,255,0.75);
+      border: 1px solid rgba(15,23,42,0.08);
+      border-radius: 999px;
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--heading);
+    }
+
+    /* ---- Contact ---- */
+    .contact {
+      font-size: 1rem;
+      color: var(--heading);
+    }
+    .contact a {
+      color: var(--heading);
+      font-weight: 700;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    footer {
+      background: #fff;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 1.25rem 1.5rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bar">
+    Print-ready artwork for local UK businesses <span class="sep" aria-hidden="true">·</span> Launching soon
+  </div>
+
+  <header>
+    <div class="header-inner">
+      <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 234.51 52.14" role="img" aria-label="Printvine">
+        <path d="M7.56,52.14H0V11.9h7.56v3.94c1.01-1.4,2.26-2.55,3.74-3.42,1.48-.88,3.21-1.32,5.19-1.32,2.27,0,4.39.42,6.35,1.27,1.96.85,3.69,2.02,5.19,3.52,1.5,1.5,2.67,3.23,3.5,5.19.84,1.96,1.26,4.07,1.26,6.32s-.42,4.37-1.26,6.36c-.84,1.98-2,3.72-3.5,5.22-1.5,1.5-3.23,2.67-5.19,3.52-1.96.85-4.08,1.27-6.35,1.27-1.98,0-3.71-.44-5.19-1.32-1.48-.88-2.72-2.02-3.74-3.43v13.12ZM16.4,18.37c-1.57,0-2.98.41-4.22,1.22-1.24.82-2.21,1.91-2.91,3.27-.7,1.36-1.05,2.87-1.05,4.53s.35,3.17,1.05,4.54c.7,1.38,1.67,2.47,2.91,3.29,1.24.82,2.65,1.22,4.22,1.22s3.05-.4,4.37-1.21c1.32-.81,2.38-1.9,3.16-3.27.79-1.37,1.18-2.9,1.18-4.57s-.39-3.16-1.18-4.53c-.79-1.36-1.83-2.45-3.15-3.27-1.31-.82-2.77-1.22-4.39-1.22Z"/>
+        <path d="M35.93,42.9l-.03-31h7.56l.03,2.76c1.05-1.12,2.31-2,3.78-2.65,1.47-.65,3.05-.98,4.74-.98,1.14,0,2.27.17,3.41.5l-2.98,7.63c-.79-.31-1.57-.46-2.36-.46-1.22,0-2.33.29-3.33.88s-1.8,1.38-2.39,2.39c-.59,1-.88,2.11-.88,3.33v17.61h-7.56Z"/>
+        <path d="M61.13,7.9c-1.12,0-2.06-.37-2.82-1.1-.77-.73-1.15-1.66-1.15-2.77s.38-2.01,1.15-2.76c.76-.74,1.69-1.12,2.79-1.12s2.02.37,2.77,1.12c.75.74,1.13,1.66,1.13,2.76s-.37,2.04-1.12,2.77c-.74.73-1.66,1.1-2.76,1.1ZM57.29,11.9h7.56v31h-7.56V11.9Z"/>
+        <path d="M96.97,23.31v19.59h-7.56v-17.61c0-1.22-.3-2.33-.9-3.33-.6-1-1.4-1.8-2.4-2.39-1-.59-2.11-.88-3.33-.88s-2.33.29-3.33.88-1.8,1.38-2.39,2.39c-.59,1-.88,2.11-.88,3.33v17.61h-7.56l-.03-31h7.56l.03,2.76c1.05-1.12,2.31-2,3.78-2.65,1.47-.65,3.05-.98,4.74-.98,2.25,0,4.31.55,6.17,1.66,1.86,1.11,3.34,2.58,4.45,4.43,1.11,1.85,1.66,3.91,1.66,6.19Z"/>
+        <path d="M116.06,19.46h-6.01v23.44h-7.56v-23.44h-4.59v-7.56h4.59V2.16h7.56v9.73h6.01v7.56Z"/>
+        <path d="M139.22,42.9h-9.77l-11.28-31.03h8.06l8.12,22.32,8.09-22.32h8.06l-11.28,31.03Z"/>
+        <path d="M156.21,7.9c-1.12,0-2.06-.37-2.82-1.1-.76-.73-1.15-1.66-1.15-2.77s.38-2.01,1.15-2.76,1.69-1.12,2.79-1.12,2.02.37,2.77,1.12c.75.74,1.13,1.66,1.13,2.76s-.37,2.04-1.12,2.77c-.74.73-1.66,1.1-2.76,1.1ZM152.36,11.9h7.56v31h-7.56V11.9Z"/>
+        <path d="M192.04,23.31v19.59h-7.56v-17.61c0-1.22-.3-2.33-.9-3.33-.6-1-1.4-1.8-2.4-2.39-1-.59-2.11-.88-3.33-.88s-2.33.29-3.33.88c-1,.59-1.8,1.38-2.39,2.39-.59,1-.88,2.11-.88,3.33v17.61h-7.56l-.03-31h7.56l.03,2.76c1.05-1.12,2.31-2,3.78-2.65s3.05-.98,4.74-.98c2.25,0,4.31.55,6.17,1.66,1.86,1.11,3.34,2.58,4.45,4.43s1.66,3.91,1.66,6.19Z"/>
+        <path d="M210.64,43.7c-2.85,0-5.45-.73-7.8-2.2-2.35-1.47-4.22-3.44-5.61-5.92-1.39-2.48-2.09-5.22-2.09-8.21,0-2.25.4-4.37,1.21-6.34.81-1.97,1.92-3.71,3.33-5.21,1.42-1.5,3.06-2.67,4.94-3.52s3.89-1.27,6.01-1.27c2.42,0,4.63.51,6.65,1.53,2.01,1.02,3.72,2.42,5.13,4.2s2.43,3.8,3.07,6.08c.64,2.27.79,4.65.43,7.13h-22.66c.29,1.16.76,2.2,1.43,3.12.66.92,1.5,1.65,2.51,2.2s2.16.83,3.44.85c1.32.02,2.53-.29,3.61-.95,1.08-.65,1.99-1.54,2.71-2.65l7.72,1.8c-1.26,2.75-3.14,5-5.64,6.74-2.5,1.75-5.3,2.62-8.4,2.62ZM203.01,24.3h15.25c-.23-1.24-.71-2.36-1.44-3.36-.73-1-1.64-1.8-2.71-2.4-1.08-.6-2.23-.9-3.47-.9s-2.39.29-3.44.88-1.95,1.38-2.68,2.39c-.73,1-1.24,2.13-1.5,3.4Z"/>
+        <path fill="#22b573" d="M230.6,43.7c-1.08,0-1.99-.38-2.74-1.13s-1.13-1.68-1.13-2.77.38-1.96,1.13-2.73c.75-.76,1.67-1.15,2.74-1.15s1.99.38,2.76,1.15c.76.76,1.15,1.67,1.15,2.73s-.38,2.02-1.15,2.77c-.76.75-1.68,1.13-2.76,1.13Z"/>
+      </svg>
+    </div>
+  </header>
+
+  <main>
+    <div class="panel">
+      <span class="eyebrow">Coming soon</span>
+      <h1>Print-ready artwork for <span class="accent">local businesses</span></h1>
+      <p class="lead">
+        Professional artwork for menus, flyers, posters, business cards and more —
+        designed properly, proofed, and ready for print. Our new site is on the way.
+      </p>
+
+      <div class="benefits">
+        <span>2 revision rounds</span>
+        <span>CMYK 300dpi setup</span>
+        <span>Print-ready files</span>
+      </div>
+
+      <p class="contact">
+        Get in touch:
+        <!-- PLACEHOLDER EMAIL — swap hello@printvine.co.uk for the real inbox when ready -->
+        <a href="mailto:hello@printvine.co.uk">hello@printvine.co.uk</a>
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Printvine. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
